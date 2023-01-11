@@ -4,8 +4,8 @@ This is a solution to the [Suite landing page challenge on Frontend Mentor](http
 
 ## Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/meet-landing-page-m0EcCyRRJv](https://www.frontendmentor.io/solutions/meet-landing-page-m0EcCyRRJv)
-- Live Site URL: [https://zauri-khutsishvili.github.io/meet-landing-page/](https://zauri-khutsishvili.github.io/meet-landing-page/)
+- Solution URL: [https://www.frontendmentor.io/solutions/suite-landing-page-8Xma2f9Pub](https://www.frontendmentor.io/solutions/suite-landing-page-8Xma2f9Pub)
+- Live Site URL: [https://zauri-khutsishvili.github.io/suite-landing-page/](https://zauri-khutsishvili.github.io/suite-landing-page/)
 
 ## Built with
 
