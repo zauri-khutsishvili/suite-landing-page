@@ -1,0 +1,465 @@
+:root {
+    --dark-blue: hsl(219, 43%, 16%);
+    --gray: hsl(218, 20%, 36%);
+    --cream: hsl(30, 33%, 93%);
+    --cream-white: hsl(30, 29%, 97%);
+    --lavender: hsl(264, 100%, 69%);
+    --purple: hsl(292, 76%, 54%);
+    --orange: hsl(31, 100%, 65%);
+
+    --regular: 400;
+    --bold: 700;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2.4rem 1.6rem;
+    font-family: 'Epilogue', sans-serif;
+    background-color: var(--cream-white);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top__logo {
+    align-self: center;
+    margin-top: -0.6rem;
+    margin-left: .1rem;
+}
+
+.top__button {
+    all: unset;
+    border: .1rem solid var(--dark-blue);
+    border-radius: .6rem;
+    padding: 1.14em 1.165em 1.14em 1.05em;
+    font-weight: var(--bold);
+    font-size: 1.4rem;
+    letter-spacing: -0.01em;
+    z-index: 2;
+    cursor: pointer;
+    transition: .125s;
+}
+
+.top__button:hover {
+    color: var(--cream-white);
+    background-color: var(--dark-blue);
+}
+
+.header {
+    margin-top: 8.4rem;
+    margin-bottom: 24.2rem;
+    display: grid;
+}
+
+.header__title {
+    font-weight: var(--regular);
+    font-size: 3.8rem;
+    color: var(--dark-blue);
+    line-height: 1.18em;
+    letter-spacing: -0.014em;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.header__title img {
+    position: absolute;
+    width: 15.15rem;
+    top: -2.8rem;
+    left: 15.4rem;
+}
+
+.header__title span {
+    font-weight: var(--bold);
+}
+
+.header__description {
+    font-size: 1.6rem;
+    color: var(--gray);
+    line-height: 1.75em;
+    letter-spacing: .005em;
+    margin-bottom: 3.2rem;
+}
+
+.header__button {
+    all: unset;
+    background-color: var(--dark-blue);
+    border-radius: .6rem;
+    padding: 1.25em 1.8em 1.15em 1.8em;
+    font-weight: var(--bold);
+    font-size: 1.8rem;
+    letter-spacing: -0.01em;
+    color: var(--cream-white);
+    margin-bottom: 5.6rem;
+    cursor: pointer;
+}
+
+.header__button:hover {
+    background: 
+        linear-gradient(135deg, 
+        var(--lavender) 0%, 
+        var(--purple) 49.21%, 
+        var(--orange) 100%);
+}
+
+.header__hero {
+    width: 100%;
+    margin-bottom: 5.7rem;
+}
+
+.header__hero img {
+    width: 100%;
+}
+
+.header__stats {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    color: var(--dark-blue);
+    font-size: 4.8rem;
+    font-weight: var(--bold);
+    text-transform: uppercase;
+}
+
+.header__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .9rem;
+}
+
+.header__stat span {
+    font-weight: var(--regular);
+    color: var(--gray);
+    font-size: 1.6rem;
+    letter-spacing: .15625em;
+}
+
+.hero {
+    background-color: var(--dark-blue);
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+    margin-bottom: 5.6rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 6.9rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero__illustration {
+    position: relative;
+    width: 100%;
+    height: 26rem;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__jeremy {
+    width: 24.3rem;
+    position: absolute;
+    top: -17.4rem;
+    margin-left: 2.2rem;
+    z-index: 2;
+}
+
+.hero__blur {
+    mix-blend-mode: normal;
+    opacity: 1;
+    filter: blur(3.5rem);
+}
+
+.hero__line {
+    margin-bottom: 3.8rem;
+}
+
+.hero__line img {
+    width: 5rem;
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__title {
+    color: var(--cream-white);
+    font-size: 4rem;
+    font-weight: var(--regular);
+    letter-spacing: -0.01em;
+    margin-bottom: 4.4rem;
+}
+
+.hero__title span {
+    font-weight: var(--bold);
+}
+
+.hero__quote {
+    color: var(--cream);
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 1.78em;
+    letter-spacing: 0.005em;
+    width: 85%;
+    margin-bottom: 4.7rem;
+}
+
+.hero__quote-author {
+    color: var(--cream-white);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: var(--bold);
+    letter-spacing: -0.01em;
+    margin-bottom: 1.1rem;
+}
+
+.hero__quote-author-position {
+    color: var(--cream);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.5rem;
+    background-color: var(--cream);
+    margin: -60rem -1.6rem;
+    padding-bottom: 7.8rem;
+    padding-top: 60rem;
+}
+
+.footer__logo {
+    width: 8.1rem;
+}
+
+.footer__copyright {
+    color: var(--gray);
+    font-size: 1.5rem;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 2.8rem;
+    align-items: center;
+}
+
+.footer__social {
+    cursor: pointer;
+    transition: .1s;
+}
+
+.footer__social:hover {
+    opacity: .5;
+}
+
+@media (min-width: 650px) {
+    body {
+        padding: 4rem;
+        padding-left: 3.9rem;
+    }
+
+    .top__button {
+        padding: 1.15em 1.49em 1.15em 1.41em;
+        font-size: 1.6rem;
+        letter-spacing: -0.01em;
+    }
+
+    .header {
+        margin-top: 8rem;
+        margin-bottom: 27.8rem;
+    }
+
+    .header__text {
+        grid-column: 1;
+        margin-right: -13.6rem;
+    }
+
+    .header__title {
+        font-size: 5.6rem;
+        margin-top: 8.8rem;
+        width: 90%;
+        line-height: 1.17em;
+        margin-bottom: 3.8rem;
+    }
+
+    .header__title img {
+        width: 23.3rem;
+        top: -4.5rem;
+        left: 22.2rem;
+    }
+
+    .header__description {
+        width: 65%;
+        margin-bottom: 4rem;
+    }
+
+    .header__hero {
+        grid-column: 2;
+        margin-bottom: 9rem;
+    }
+
+    .header__stats {
+        flex-direction: row;
+        justify-content: center;
+        gap: 12.4rem;
+        grid-column: 1 / span 2;
+    }
+
+    .hero {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 7.5rem;
+    }
+
+    .hero__quote {
+        width: 83%;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 4.5rem;
+        padding: 53.9rem 4rem 7.5rem 4rem;
+        margin: -53.9rem -4rem -4rem;
+    }
+
+    .footer__copyright {
+        margin-left: 3.7rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    body {
+        padding: 5rem 16.6rem;
+    }
+
+    .header {
+        margin-top: 6.7rem;
+        gap: 9.5rem;
+        margin-bottom: 10.7rem;
+    }
+
+    .header__text {
+        margin-right: -25rem;
+    }
+
+    .header__title {
+        margin-top: 10.3rem;
+        width: 100%;
+        font-size: 7.2rem;
+        line-height: 1.09em;
+        margin-bottom: 3.9rem;
+    }
+
+    .header__title img {
+        width: 29rem;
+        top: -5.6rem;
+        left: 29rem;
+    }
+    
+    .header__description {
+        width: 55%;
+        font-size: 1.8rem;
+        line-height: 1.8em;
+        margin-bottom: 5.1rem;
+    }
+
+    .header__hero {
+        width: 35rem;
+    }
+
+    .header__stats {
+        margin-top: -10.7rem;
+        grid-column: 3;
+        flex-direction: column;
+        gap: 7.1rem;
+        margin-right: 7.9rem;
+    }
+
+    .header__stat {
+        align-items: flex-start;
+    }
+
+    .hero {
+        flex-direction: row;
+        padding: 0;
+        padding-left: 12rem;
+        padding-right: 9rem;
+        margin-bottom: 9.5rem;
+        gap: 5.3rem;
+    }
+
+    .hero__illustration {
+        height: auto;
+        width: 36.3rem;
+        align-items: flex-end;
+    }
+    
+    .hero__jeremy {
+        width: 100%;
+        margin-left: 0;
+        top: auto;
+    }
+    
+    .hero__line {
+        margin-bottom: 16.6rem;
+        margin-left: -1.5rem;
+    }
+
+    .hero__blur {
+        transform: translate(-1rem, 8rem);
+    }
+    
+    .hero__line img {
+        width: 6.4rem;
+    }
+    
+    .hero__text {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 9.2rem 0;
+        margin-left: -0.3rem;
+    }
+    
+    .hero__title {
+        font-size: 4.8rem;
+    }
+    
+    .hero__quote {
+        font-size: 2rem;
+        text-align: left;
+        line-height: 1.75em;
+        width: 98%;
+        margin-bottom: 4.7rem;
+    }
+    
+    .hero__quote-author {
+        margin-bottom: 1.1rem;
+    }
+
+    .footer {
+        padding: 36rem 16.6rem 5rem;
+        padding-bottom: 7.8rem;
+        margin: -36rem -16.6rem -5rem;
+    }
+}
