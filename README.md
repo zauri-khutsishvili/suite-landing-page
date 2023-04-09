@@ -1,4 +1,4 @@
-# Frontend Mentor - Meet landing page solution
+# Frontend Mentor - Suite landing page solution
 
 This is a solution to the [Suite landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/suite-landing-page-tj_eaU-Ra).
 
